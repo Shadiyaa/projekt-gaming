@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Merriweather', serif;
+  background: #2C3A47;
+}
+
+/* NAWIGACJA */
+nav {
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #fff;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+nav a:hover {
+  color: #25CCF7;
+}
+
+nav i {
+  color: #fff;
+  font-size: 23px;
+  padding: 10px;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .active {
+  color: #25CCF7;
+}
+/*# sourceMappingURL=main.css.map */

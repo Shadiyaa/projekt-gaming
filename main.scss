@@ -1,0 +1,50 @@
+$color-link: #fff;
+$color-link-hover: #25CCF7;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Merriweather', serif;
+    background: #2C3A47;
+}
+
+/* NAWIGACJA */
+
+nav {
+    text-transform: uppercase;
+
+    a {
+        color: $color-link;
+        transition: color .4s;
+
+        &:hover {
+            color: $color-link-hover;
+        }
+    }
+
+    i {
+        color: $color-link;
+        font-size: 23px;
+        padding: 10px;
+
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .active {
+        color: $color-link-hover;
+    }
+}
