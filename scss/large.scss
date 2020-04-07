@@ -2,6 +2,14 @@ header {
     .hero-img {
         .fa-hand-point-down {
             display: block;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            padding: 10px;
+            color: #fff;
+            transform: translateX(-50%);
+            font-size: 30px;
+            animation: bounce 1.6s infinite;
         }
     }
 }
