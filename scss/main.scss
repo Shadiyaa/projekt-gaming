@@ -60,7 +60,7 @@ header {
     .hero-img {
         position: relative;
         height: 100vh;
-        background-image: url('img/baner.jpg');
+        background-image: url('/img/baner.jpg');
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -77,10 +77,13 @@ header {
 
             h1 {
                 text-transform: uppercase;
+                font-size: 30px;
+                padding: 10px;
             }
 
             p {
                 padding: 10px;
+                font-size: 14px;
             }
 
             .btn-outline-light {
@@ -89,6 +92,7 @@ header {
         }
 
         .fa-hand-point-down {
+            display: none;
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -104,5 +108,21 @@ header {
         height: 100%;
         background-color: rgba(0, 0, 0, .5);
         z-index: -10;
+    }
+}
+
+@media (min-width: 375px) {
+    header {
+        .hero-img {
+            .header-text {
+                h1 {
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
