@@ -25,6 +25,8 @@ body {
 /* NAWIGACJA */
 nav {
   text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
 }
 
 nav a {
@@ -49,6 +51,10 @@ nav .navbar-brand {
 
 nav .active {
   color: #016881;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 header {

@@ -27,6 +27,7 @@ body {
 
 nav {
     text-transform: uppercase;
+    transition: background-color .6s;
 
     a {
         color: #fff;
@@ -50,6 +51,11 @@ nav {
     .active {
         color: $color-link-hover;
     }
+
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, .8);
 }
 
 // HEADER
