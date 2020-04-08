@@ -22,6 +22,30 @@ body {
   font-weight: bold;
 }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #016881;
+}
+
+.scroll-fix::before {
+  display: block;
+  margin-top: -66px;
+  height: 66px;
+  content: '';
+}
+
 /* NAWIGACJA */
 nav {
   text-transform: uppercase;
@@ -59,6 +83,7 @@ nav .active {
 
 header {
   color: #fff;
+  overflow: hidden;
 }
 
 header .hero-img {
@@ -114,6 +139,29 @@ header .header-shadow {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -10;
+}
+
+#aboutUs i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+#aboutUs h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#aboutUs p {
+  font-size: 14px;
+}
+
+#aboutUs .aboutUs-hover {
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+#aboutUs .aboutUs-hover:hover {
+  color: #016881;
 }
 
 @media (min-width: 375px) {

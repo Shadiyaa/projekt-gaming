@@ -1,4 +1,4 @@
-$color-link-hover: rgb(1, 104, 129);
+$blue-color: rgb(1, 104, 129);
 
 *,
 *::before,
@@ -19,8 +19,32 @@ body {
 }
 
 .other-color {
-    color: $color-link-hover;
+    color: $blue-color;
     font-weight: bold;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .underline {
+        margin: 0 auto 40px;
+        width: 60px;
+        height: 4px;
+        background-color: $blue-color;
+    }
+}
+
+.scroll-fix::before {
+    display: block;
+    margin-top: -66px;
+    height: 66px;
+    content: '';
 }
 
 /* NAWIGACJA */
@@ -34,7 +58,7 @@ nav {
         transition: color .4s;
 
         &:hover {
-            color: $color-link-hover;
+            color: $blue-color;
         }
     }
 
@@ -49,7 +73,7 @@ nav {
     }
 
     .active {
-        color: $color-link-hover;
+        color: $blue-color;
     }
 
 }
@@ -61,6 +85,7 @@ nav {
 // HEADER
 header {
     color: #fff;
+    overflow: hidden;
 
     .hero-img {
         position: relative;
@@ -110,6 +135,33 @@ header {
         z-index: -10;
     }
 }
+
+// MAIN
+
+#aboutUs {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .aboutUs-hover {
+        transition: color .5s;
+
+        &:hover {
+            color: $blue-color;
+        }
+    }
+}
+
 
 @media (min-width: 375px) {
     header {
