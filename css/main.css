@@ -158,6 +158,7 @@ header .header-shadow {
 #aboutUs .aboutUs-hover {
   -webkit-transition: color .5s;
   transition: color .5s;
+  visibility: hidden;
 }
 
 #aboutUs .aboutUs-hover:hover {

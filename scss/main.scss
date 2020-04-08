@@ -155,6 +155,7 @@ header {
 
     .aboutUs-hover {
         transition: color .5s;
+        visibility: hidden;
 
         &:hover {
             color: $blue-color;
