@@ -47,6 +47,10 @@ body {
     content: '';
 }
 
+.jumbotron {
+    margin: 0;
+}
+
 /* NAWIGACJA */
 
 nav {
@@ -87,7 +91,7 @@ header {
     color: #fff;
     overflow: hidden;
 
-    .hero-img {
+    .header-img {
         position: relative;
         height: 100vh;
         background-image: url('/img/baner.jpg');
@@ -161,6 +165,37 @@ header {
             color: $blue-color;
         }
     }
+}
+
+#aboutUs-image {
+    color: #ddd;
+
+    .jumbotron {
+        position: relative;
+        background-image: url(/img/aboutUs.jpg);
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+
+        .aboutUs-shadow {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .7);
+            z-index: -10;
+        }
+
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
 }
 
 
