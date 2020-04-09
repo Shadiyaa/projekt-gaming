@@ -1,4 +1,4 @@
-header .hero-img .fa-hand-point-down {
+header .fa-hand-point-down {
   display: block;
   position: absolute;
   bottom: 20px;
@@ -10,5 +10,17 @@ header .hero-img .fa-hand-point-down {
   font-size: 30px;
   -webkit-animation: bounce 1.6s infinite;
           animation: bounce 1.6s infinite;
+}
+
+@media (min-width: 1200px) {
+  #aboutUs-image .jumbotron {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #aboutUs-image .jumbotron {
+    padding: 120px 0;
+  }
 }
 /*# sourceMappingURL=large.css.map */

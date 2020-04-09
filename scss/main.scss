@@ -31,13 +31,13 @@ body {
         text-transform: uppercase;
         text-align: center;
     }
+}
 
-    .underline {
-        margin: 0 auto 40px;
-        width: 60px;
-        height: 4px;
-        background-color: $blue-color;
-    }
+.underline {
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $blue-color;
 }
 
 .scroll-fix::before {
@@ -45,6 +45,10 @@ body {
     margin-top: -66px;
     height: 66px;
     content: '';
+}
+
+.visibility {
+    visibility: hidden;
 }
 
 .jumbotron {
@@ -57,7 +61,8 @@ nav {
     text-transform: uppercase;
     transition: background-color .6s;
 
-    a {
+    a,
+    i {
         color: #fff;
         transition: color .4s;
 
@@ -66,8 +71,7 @@ nav {
         }
     }
 
-    .fa-bars {
-        color: #fff;
+    i {
         font-size: 23px;
         padding: 10px;
     }
@@ -87,9 +91,16 @@ nav {
 }
 
 // HEADER
+
 header {
     color: #fff;
     overflow: hidden;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 10px;
+    }
 
     .header-img {
         position: relative;
@@ -99,36 +110,6 @@ header {
         background-size: cover;
         background-attachment: fixed;
         z-index: 0;
-
-
-        .header-text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            flex-direction: column;
-            text-align: center;
-
-            h1 {
-                text-transform: uppercase;
-                font-size: 30px;
-                padding: 10px;
-            }
-
-            p {
-                padding: 10px;
-                font-size: 14px;
-            }
-
-            .btn-outline-light {
-                text-transform: uppercase;
-            }
-        }
-
-        .fa-hand-point-down {
-            display: none;
-        }
-
     }
 
     .header-shadow {
@@ -138,6 +119,29 @@ header {
         background-color: rgba(0, 0, 0, .5);
         z-index: -10;
     }
+
+    .header-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .btn-outline-light {
+        text-transform: uppercase;
+    }
+
+    .fa-hand-point-down {
+        display: none;
+    }
+
 }
 
 // MAIN
@@ -159,7 +163,6 @@ header {
 
     .aboutUs-hover {
         transition: color .5s;
-        visibility: hidden;
 
         &:hover {
             color: $blue-color;
@@ -169,26 +172,22 @@ header {
 
 #aboutUs-image {
     color: #ddd;
+    overflow: hidden;
 
     .jumbotron {
         position: relative;
+        padding: 60px 0;
         background-image: url(/img/aboutUs.jpg);
         background-position: center;
         background-size: cover;
         z-index: 0;
 
-        .aboutUs-shadow {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, .7);
-            z-index: -10;
+        h2 {
+            font-size: 32px;
         }
 
-
-        h3 {
-            font-size: 20px;
+        i {
+            font-size: 35px;
         }
 
         p {
@@ -196,21 +195,60 @@ header {
         }
     }
 
-}
+    .aboutUs-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: -10;
+    }
 
+    .about-hero-item {
+        margin: 10px 0;
+    }
+}
 
 @media (min-width: 375px) {
     header {
-        .hero-img {
-            .header-text {
-                h1 {
-                    font-size: 36px;
-                }
+        h1 {
+            font-size: 36px;
+        }
 
-                p {
-                    font-size: 16px;
-                }
+        .header-text {
+            p {
+                font-size: 16px;
             }
+        }
+    }
+
+    #aboutUs {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    #aboutUs-image {
+        .jumbotron {
+            h2 {
+                font-size: 36px;
+            }
+
+            h3 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width: 414px) {
+    #aboutUs-image {
+        .jumbotron {
+            padding: 80px 0;
         }
     }
 }
