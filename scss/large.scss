@@ -12,6 +12,33 @@ header {
     }
 }
 
+// PORTFOLIO
+
+    .carousel-item {
+        position: relative;
+        height: 600px;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .carousel-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .carousel-indicators {
+        padding-bottom: 20px;
+    }
+}
+
 @media (min-width: 1200px) {
     #aboutUs-image {
         .jumbotron {

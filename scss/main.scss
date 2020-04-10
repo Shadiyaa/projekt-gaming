@@ -24,6 +24,7 @@ body {
 }
 
 .wrapper {
+    max-width: 2560px;
     width: 80%;
     margin: 0 auto;
 
@@ -206,6 +207,15 @@ header {
 
     .about-hero-item {
         margin: 10px 0;
+    }
+}
+
+// PORTFOLIO
+
+#portfolio {
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 

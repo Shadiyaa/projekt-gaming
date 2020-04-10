@@ -12,6 +12,36 @@ header .fa-hand-point-down {
           animation: bounce 1.6s infinite;
 }
 
+#portfolio h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#portfolio .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
 @media (min-width: 1200px) {
   #aboutUs-image .jumbotron {
     padding: 100px 0;
