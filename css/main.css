@@ -28,11 +28,6 @@ body {
   margin: 0 auto;
 }
 
-.wrapper h2 {
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .underline {
   margin: 0 auto 40px;
   width: 60px;
@@ -53,6 +48,11 @@ body {
 
 .jumbotron {
   margin: 0;
+}
+
+.jumbotron h2 {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* NAWIGACJA */
@@ -213,9 +213,60 @@ header .fa-hand-point-down {
   margin: 10px 0;
 }
 
-#portfolio h2 {
-  text-align: center;
+#prices .jumbotron {
+  background-color: #f9f9f9;
+}
+
+#prices .price-wrap {
+  max-width: 2560px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#prices .price-box h3 {
+  color: #016881;
   text-transform: uppercase;
+}
+
+#prices .price-box span {
+  font-weight: bold;
+}
+
+#prices .price-box i {
+  padding: 0 5px;
+  font-size: 23px;
+}
+
+#prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#prices .price-box .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#prices .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#prices .price-text {
+  margin-top: 30px;
+  padding: 0 25px;
 }
 
 @media (min-width: 375px) {

@@ -27,11 +27,6 @@ body {
     max-width: 2560px;
     width: 80%;
     margin: 0 auto;
-
-    h2 {
-        text-transform: uppercase;
-        text-align: center;
-    }
 }
 
 .underline {
@@ -54,6 +49,11 @@ body {
 
 .jumbotron {
     margin: 0;
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
 
 /* NAWIGACJA */
@@ -106,7 +106,7 @@ header {
     .header-img {
         position: relative;
         height: 100vh;
-        background-image: url('/img/baner.jpg');
+        background-image: url('../img/baner.jpg');
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -210,13 +210,59 @@ header {
     }
 }
 
-// PORTFOLIO
-
-#portfolio {
-    h2 {
-        text-align: center;
-        text-transform: uppercase;
+// PRICES
+#prices {
+    .jumbotron {
+        background-color: #f9f9f9;
     }
+
+    .price-wrap {
+        max-width: 2560px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .price-box {
+        margin: 20px 10px;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+        transition: transform .5s;
+
+        h3 {
+            color: $blue-color;
+            text-transform: uppercase;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        i {
+            padding: 0 5px;
+            font-size: 23px;
+        }
+
+        button {
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+
+    .price-box:hover {
+        transform: scale(1.05);
+    }
+
+    .price-text {
+        margin-top: 30px;
+        padding: 0 25px;
+    }
+
 }
 
 @media (min-width: 375px) {

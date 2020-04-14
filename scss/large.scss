@@ -14,6 +14,8 @@ header {
 
 // PORTFOLIO
 
+#portfolio {
+
     .carousel-item {
         position: relative;
         height: 600px;
@@ -39,10 +41,22 @@ header {
     }
 }
 
+#prices {
+    .price-wrap {
+        width: 80%;
+    }
+}
+
 @media (min-width: 1200px) {
     #aboutUs-image {
         .jumbotron {
             padding: 100px 0;
+        }
+    }
+
+    #prices {
+        .price-wrap {
+            width: 85%;
         }
     }
 }
@@ -51,6 +65,14 @@ header {
     #aboutUs-image {
         .jumbotron {
             padding: 120px 0;
+        }
+    }
+}
+
+@media (min-width: 2000px) {
+    #prices {
+        .price-wrap {
+            width: 70%;
         }
     }
 }

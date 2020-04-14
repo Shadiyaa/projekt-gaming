@@ -12,11 +12,6 @@ header .fa-hand-point-down {
           animation: bounce 1.6s infinite;
 }
 
-#portfolio h2 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
 #portfolio .carousel-item {
   position: relative;
   height: 600px;
@@ -42,15 +37,28 @@ header .fa-hand-point-down {
   padding-bottom: 20px;
 }
 
+#prices .price-wrap {
+  width: 80%;
+}
+
 @media (min-width: 1200px) {
   #aboutUs-image .jumbotron {
     padding: 100px 0;
+  }
+  #prices .price-wrap {
+    width: 85%;
   }
 }
 
 @media (min-width: 1400px) {
   #aboutUs-image .jumbotron {
     padding: 120px 0;
+  }
+}
+
+@media (min-width: 2000px) {
+  #prices .price-wrap {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=large.css.map */
