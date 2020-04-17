@@ -37,6 +37,14 @@ header .fa-hand-point-down {
   padding-bottom: 20px;
 }
 
+#team .card-body {
+  height: 180px;
+}
+
+#team .card-text {
+  font-size: 14px;
+}
+
 #prices .price-wrap {
   width: 80%;
 }
@@ -48,11 +56,20 @@ header .fa-hand-point-down {
   #prices .price-wrap {
     width: 85%;
   }
+  #team .card-text {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1400px) {
   #aboutUs-image .jumbotron {
     padding: 120px 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  #team .card-text {
+    font-size: 18px;
   }
 }
 

@@ -41,6 +41,16 @@ header {
     }
 }
 
+
+#team {
+    .card-body {
+        height: 180px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+}
+
 #prices {
     .price-wrap {
         width: 80%;
@@ -59,12 +69,26 @@ header {
             width: 85%;
         }
     }
+
+    #team {
+        .card-text {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (min-width: 1400px) {
     #aboutUs-image {
         .jumbotron {
             padding: 120px 0;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    #team {
+        .card-text {
+            font-size: 18px;
         }
     }
 }
